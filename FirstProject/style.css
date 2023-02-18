@@ -1,0 +1,152 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+text-align: center;
+}
+
+body{
+    background-color: #edf1fd;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+button{
+    background-color: rgb(18, 155, 155);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+button:hover{
+    background-color: #fff;
+    color: rgb(18, 155, 155);
+    border: 1px solid #000;
+}
+
+header{
+    padding: 15px 0px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav.logo{
+    font-weight: 1200;
+    font-size: 35px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.Search-fild{
+    display: flex;
+    gap: 30px;
+}
+
+input{
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+}
+
+.left-section{
+    width: 60%;
+    padding: 0 8%;
+    align-items: left;
+}
+
+.left-section h1{
+    font-weight: 800;
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.left-section h1 span{
+    color: rgb(18, 155, 155);
+    font-weight: 900;
+    background-color: #dfdfe0;
+    padding: 0 15px;
+}
+
+.left-section p{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.left-section p span{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(18, 155, 155);
+}
+
+.right-section{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.right-section button{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.right-section img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer{
+    font-weight: 600;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
