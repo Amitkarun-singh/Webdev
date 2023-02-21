@@ -136,7 +136,7 @@ img[alt="Waving hand"]{
     font-size: 40px;
 }
 
-.horizontal-divider{
+.horizontal-divider-footer{
     height: 10px;
     width: 200px;
     background-color: blue;
@@ -162,4 +162,77 @@ img[alt="Waving hand"]{
 
 .footer-list li a{
     text-decoration: none;
+}
+
+@media screen and (max-width: 576px){
+    nav ul{
+        display: none;
+    }
+
+    img[alt="menu"]{
+        display: block;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[alt="pc-image"]{
+        width: 60vw;
+    }
+
+    .intro-line1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .intro-line2 h1{
+        font-size: 40px;
+    }
+
+    .intro-line2 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+
+    img[alt="projects image"]{
+        width: 55vw;
+    }
+
+    .main-heading-1{
+        font-size: 35px;
+    }
+
+    .Footer-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-heading-1{
+        font-size: 35px;
+    }
+
+    .horizontal-divider-footer{
+        height: 10px;
+        width: 180px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 }
