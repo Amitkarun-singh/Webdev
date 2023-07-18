@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked css -->
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Counter App</title>
+</head>
+<body>
+    <!-- wrapper -->
+    <div id="wrapper" class="h-[100vh] w-[100vw] flex flex-col justify-center items-center bg-[#344151] gap-10">
+
+        <!-- Heading -->
+        <div class="text-[#0398d4] font-medium text-[20px]">Increment And Decrement</div>
+
+        <!-- Secondary wapper -->
+        <div class="bg-white flex justify-center text-[25px] text-[#344151] rounded-sm gap-12 p-2 px-5">
+
+            <!-- Negative button -->
+            <button type="button" title="minus button" class="border-r-2 border-[#bfbfbf] pr-5" onclick="decrement()">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div id="counter" class="font-bold">
+                0
+            </div>
+
+            <!-- Positive button -->
+            <button type="button" title="plus button" class="border-l-2 border-[#bfbfbf] pl-5" onclick="increment()">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b7e0cd22a4.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
