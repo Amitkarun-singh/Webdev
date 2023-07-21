@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Modal</title>
+    <style>
+    @keyframes circle1Animate {
+        0% {
+            left: 0%;
+            top: 0%;
+            transform: scale(1);
+        }
+        50% {
+            left: 33%;
+            top: 4%;
+            transform: scale(1.11);
+        }
+        100% {
+            left: 0%;
+            top: 0%;
+            transform: scale(1);
+        }
+    }
+    .animate-circle1Animate {
+        animation: circle1Animate 15s infinite;
+    }
+    @keyframes circle2Animate {
+        0% {
+            bottom: 0%;
+            right: 0%; 
+        }
+        50% {
+            bottom: 6%;
+            right: 31%;
+        }
+        100% {
+            bottom: 0%;
+            right: 0%;
+        }
+    }
+    .animate-circle2Animate {
+        animation: circle2Animate 8s infinite;
+    }
+    </style>
+</head>
+<body class="relative h-full w-full m-0 p-0 overflow-y-hidden bg-black">
+    <!-- wrapper -->
+        <div id="circle1" class="absolute top-[5%] left-[30%] w-[13em] h-[13em] rounded-full shadow-[0 0 50px #d84869] bg-gradient-to-r from-pink-600 to-red-500 animate-circle1Animate"></div>
+        <div id="circle2" class="absolute bottom-[5%] right-[30%] w-[19em] h-[19em] rounded-full shadow-lg bg-gradient-to-r from-purple-600 to-indigo-500 animate-circle2Animate"></div>
+        
+
+        <div class="w-[100vw] h-[100vh]">
+        <!-- box -->
+        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[500px] 
+        w-[400px] border-2 border-opacity-30 border-white flex flex-col items-center justify-center justify-evenly bg-[#ffffff1a] backdrop-blur-lg rounded-2xl text-white p-20-50">
+            <img src="./asset/IMG20230707142601.jpg" alt="profile image" class="rounded-full object-contain w-[140px] h-[150px] border-2 border-opacity-30 border-white"/>
+            <h1 class="text-[2.3rem] text-center block font-bold text-[#ffffff]">Amit Singh</h1>
+            <p class="text-center text-[#ffffff85] block text-[1.71em] font-bold">Full Stack Web Developer</p>
+
+            <!-- button -->
+            <div class="flex justify-between gap-[10px]">
+                    <button title="button" class="flex justify-center items-center gap-[7px] px-[9px] py-[12px] bg-[#ffffff00] border-[2px] border-solid border-[#ffffffb9] rounded-[4px] text-[#ffffffb9] cursor-pointer">
+                        <i class="fa-solid fa-share" class="font-[900]"></i>
+                        <div>Share My Profile</div>
+                    </button>
+
+                <button title="button2" class="font-[150px] px-[9px] py-[12px] bg-[#ffffff00] border-[2px] border-solid border-[#ffffffb9] rounded-[4px] text-[#ffffffb9] cursor-pointer">Follow Me</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Modal box -->
+        <div>
+            <div>
+                <h1>Share My Profile</h1>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div>
+                <p>Share this via</p>
+
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://kit.fontawesome.com/b7e0cd22a4.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
