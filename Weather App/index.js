@@ -24,10 +24,12 @@ function switchTab(clickedTab){
         if(!searchForm.classList.contains("active")){
             userInfoContainer.classList.remove("active");
             grantAccessContainer.classList.remove("active");
+            errorTab.classList.remove("active");
             searchForm.classList.add("active");
         }else{
             searchForm.classList.remove("active");
             userInfoContainer.classList.remove("active");
+            errorTab.classList.remove("active");
             getfromSessionStorage();
         }
     }
@@ -66,6 +68,8 @@ async function fetchUserWeatherInfo(coordinates){
             userInfoContainer.classList.add("active");
             renderWeatherInfo(data);
         }else{
+            const errorData = await response.json();
+            console.log("Error Response:", errorData);
             loadingScreen.classList.remove("active");
             userInfoContainer.classList.remove("active");
             errorTab.classList.add("active");
@@ -146,6 +150,8 @@ async function fetchSearchWeatherInfo(city) {
             userInfoContainer.classList.add("active");
             renderWeatherInfo(data);
         }else{
+            const errorData = await response.json();
+            console.log("Error Response:", errorData);
             loadingScreen.classList.remove("active");
             userInfoContainer.classList.remove("active");
             errorTab.classList.add("active");
