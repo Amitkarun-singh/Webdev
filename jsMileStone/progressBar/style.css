@@ -1,0 +1,19 @@
+/* 22. Progress Bar
+Create a progress bar that fills up as the user scrolls down the page. */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background-color: #f1f1f1;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+}
